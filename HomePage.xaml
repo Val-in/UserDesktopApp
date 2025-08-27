@@ -1,0 +1,25 @@
+<Window x:Class="UserDesktopApp.HomePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="User Application" Height="350" Width="500">
+    <Grid Background="Bisque">
+        <Border MinHeight="250" MinWidth="400" Margin="15" Background="Gainsboro" VerticalAlignment="Center" Padding="30"
+                CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="Gray" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Hello!" FontSize="30" FontWeight="Normal" Margin="5"/>
+                
+                <Grid Margin="0 15 0 15 ">
+                  <ListView x:Name="listOfUsers" Margin="10"></ListView>  
+                    
+                </Grid>
+            </StackPanel>
+        </Border>
+        
+    </Grid>
+</Window>
